@@ -184,9 +184,9 @@
 <body>
     <div class="container">
         <header class="header">
-            <a href="index.html" class="logo">Community Driven Delivery</a>
+            <a href="home.html" class="logo">Community Driven Delivery</a>
             <div class="header-links">
-                <a href="index.html">Home</a>
+                <a href="home.html">Home</a>
             </div>
         </header>
         
@@ -284,18 +284,18 @@
         }
         
         // Handle login form submission
-        document.getElementById('login-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('login-email').value;
-            const password = document.getElementById('login-password').value;
-            
-            // In a real app, you would send these credentials to your server
-            console.log('Login attempt:', email, password);
-            
-            // For demo, redirect to home page
-            alert('Login successful!');
-            window.location.href = 'index.html';
-        });
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+    
+    // In a real app, you would send these credentials to your server
+    console.log('Login attempt:', email, password);
+    
+    // For demo, redirect to home page
+    alert('Login successful!');
+    window.location.href = 'home.html';  // Changed from index.html to home.html
+});
         
         // Handle signup form submission
         document.getElementById('signup-form').addEventListener('submit', function(e) {
