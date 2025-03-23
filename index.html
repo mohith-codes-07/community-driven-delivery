@@ -299,7 +299,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
         // Store current user data in session
         localStorage.setItem('currentUser', JSON.stringify(user));
         alert('Login successful!');
-        window.location.href = 'account.html';
+        window.location.href = 'home.html'; // Navigate to home.html instead of account.html
     } else {
         alert('Invalid email or password!');
     }
@@ -346,7 +346,7 @@ document.getElementById('signup-form').addEventListener('submit', function(e) {
     localStorage.setItem('currentUser', JSON.stringify(user));
     
     alert('Signup successful!');
-    window.location.href = 'account.html';
+    window.location.href = 'home.html'; // Navigate to home.html instead of account.html
 });
     </script>
 </body>
